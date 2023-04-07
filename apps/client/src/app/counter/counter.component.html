@@ -1,0 +1,11 @@
+<div>
+  <div>
+    <label>The value of the counter is: </label>
+    <span>{{ count }}</span>
+  </div>
+  <div>
+    <button *ngIf="canIncrement" (click)="increment()">Increment</button>
+    <button *ngIf="canDecrement" (click)="decrement()">Decrement</button>
+    <button *ngIf="canReset" (click)="reset()">Reset</button>
+  </div>
+</div>
